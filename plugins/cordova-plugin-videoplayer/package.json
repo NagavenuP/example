@@ -1,0 +1,50 @@
+{
+  "_from": "cordova-plugin-videoplayer",
+  "_id": "cordova-plugin-videoplayer@0.1.4",
+  "_inBundle": false,
+  "_integrity": "sha1-l8om5QQWvi3mhYIvh0hztEOqYIA=",
+  "_location": "/cordova-plugin-videoplayer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-videoplayer",
+    "name": "cordova-plugin-videoplayer",
+    "escapedName": "cordova-plugin-videoplayer",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-videoplayer/-/cordova-plugin-videoplayer-0.1.4.tgz",
+  "_shasum": "97ca26e50416be2de685822f874873b443aa6080",
+  "_spec": "cordova-plugin-videoplayer",
+  "_where": "E:\\Projects\\reactjs-abp-ci\\reactjs-abp-cip",
+  "author": {
+    "name": "phi"
+  },
+  "bugs": {
+    "url": "https://github.com/phi-jp/cordova-plugin-videoplayer/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "cordova-plugin-videoplayer",
+  "homepage": "https://github.com/phi-jp/cordova-plugin-videoplayer#readme",
+  "keywords": [
+    "cordova"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "cordova-plugin-videoplayer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phi-jp/cordova-plugin-videoplayer.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.4"
+}

@@ -1,0 +1,5 @@
+storeFile=../../keystore/abp.keystore
+storeType=jks
+keyAlias=abp
+keyPassword=ci-platform
+storePassword=ci-platform

@@ -1,0 +1,54 @@
+
+@import 'app.scss';
+@import './_mixins.scss';
+.card--material,
+.page--material__content h1,
+.page--material__content h2,
+.page--material__content h3,
+.page--material__content h4,
+.page--material__content h5,
+.page--material__content {
+    font-family: 'RobotoCondensed-Regular';
+}
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+.dashboard{
+    height: 100%;
+  
+    .imageIcon{
+        background: url('./../images/backgrondimg.png') center center  no-repeat;
+        height: 100%;
+        background-size:contain; 
+       .parent{
+        display: table;
+        margin: 0px auto;
+        height: 100%;
+           .child{
+            display: table-cell;
+            margin: 0px auto;
+            font-size: 25px;
+            vertical-align: middle;
+            padding-top: 10px;
+           .aligbutton{
+               padding-top: 20px;
+               .buttonProperties{
+              width: 120%;
+              display: flex;
+    height: 26px;
+    justify-content: center;
+    border-radius: 7px;
+    background: #bf5050;
+    color: white;
+           }
+             
+               
+           }
+           }
+          
+       }
+    }
+}
+

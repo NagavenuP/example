@@ -1,0 +1,24 @@
+{
+	// See http://go.microsoft.com/fwlink/?LinkId=827846
+	// for the documentation about the extensions.json format
+	"recommendations": [
+		// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+		"2gua.rainbow-brackets",
+		"akamud.vscode-javascript-snippet-pack",
+		"alechp.react-toolbox-snippets",
+		"anseki.vscode-color",
+		"christian-kohler.path-intellisense",
+		"dbaeumer.vscode-eslint",
+		"donjayamanne.githistory",
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-rename-tag",
+		"msjsdiag.debugger-for-chrome",
+		"progre.promise-snippets",
+		"TimonVS.ReactSnippetsStandard",
+		"TwentyChung.jsx",
+		"vsmobile.vscode-react-native",
+		"wmaurer.change-case",
+		"xabikos.JavaScriptSnippets",
+		"xabikos.ReactSnippets"
+	]
+}

@@ -1,0 +1,62 @@
+stages:
+  # - pre_merge
+  - dev_build
+  - stage_build
+  - production_build
+before_script:
+#  - npm config set proxy http://192.168.1.115:8080/  
+#  - npm config set https-proxy http://192.168.1.115:8080/
+#  - npm config set strict-ssl false
+  - npm install
+# pre_merge:
+#   stage: pre_merge
+#   tags:
+#     - iOS-1
+#   except:
+#     - abp_master
+#     - qa 
+#     - new_functionalities_dce
+#   script:
+#     - git pull origin new_functionalities_dce
+#     - npm run build_app_dev
+
+
+dev_build:
+  stage: dev_build
+  tags:
+    - iOS-1
+  only:
+    - new_functionalities_dce
+  script:
+    - npm run build_app_dev_git --debug
+  artifacts:
+    name: "ABP_JOB_ID_${CI_JOB_ID}_${CI_BUILD_STAGE}_${CI_BUILD_REF_NAME}_$(date +\"%d-%m-%y_%I-%M\")"
+    paths:
+      - ./*.apk
+
+stage_build:
+  stage: stage_build
+  tags:
+    - iOS-1
+  only:
+    - qa
+  script:
+    - npm run build_app_stage_git --debug
+  artifacts:
+    name: "ABP_JOB_ID_${CI_JOB_ID}_${CI_BUILD_STAGE}_${CI_BUILD_REF_NAME}_$(date +\"%d-%m-%y_%I-%M\")"
+    paths:
+      - ./*.apk
+
+production_build:
+  stage: production_build
+  tags:
+    - iOS-1
+  only:
+    - pre-prod
+    - master
+  script:
+    - npm run build_app_prod_git --debug
+  artifacts:
+    name: "ABP_JOB_ID_${CI_JOB_ID}_${CI_BUILD_STAGE}_${CI_BUILD_REF_NAME}_$(date +\"%d-%m-%y_%I-%M\")"
+    paths:
+      - ./*.apk

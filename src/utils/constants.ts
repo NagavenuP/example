@@ -1,0 +1,28 @@
+export const AppConstants = {
+    STRING_TYPE: 0,
+    CHECKBOX_TYPE: 'checkbox',
+    ENUM_TYPE: 1,
+    DASHBOARD_PAGE: 'Overview',
+    BUTTON_SUBMIT: 'Submit',
+    BUTTON_DONE: 'Done',
+    BUTTON_NEXT: 'Next',
+    BUTTON_SAVE: 'Save',
+    BUTTON_ADD_FAMILY_MEMBER: 'Done',
+    BUTTON_CONDITIONAL: 'Done',
+    ALL_SURVEYS_PAGE: 'All Surveys',
+    DRAFT_PAGE: 'Draft',
+    RADIO_TYPE: 'radio',
+    DATE_TYPE: 3,
+    SELECT: 'select',
+    ELEMENTS: 'elements',
+    GOOGLE_CONSTANTS: ['route', 'street_number', 'administrative_area_level_3', 'administrative_area_level_4', 'administrative_area_level_5', 'sublocality_level_1', 'sublocality_level_2'],
+    SECIONLIST_PAGE: 'Household Form',
+    SURVEY_INSTITUTION: 'institution',
+    SURVEY_DATACOLLECTION: 'datacollection',
+    SECTION_NAME: 'section',
+    SURVEY_STATUS_INCOMPLETE: 'draft',
+    SURVEY_STATUS_SUBMITTED: 'submitted',
+    /*.............Don't change below key.................*/
+    DCE_APP_SIGNATURE_SECRET_KEY: 'abp-ci',
+    DCE_APP_NONCE: 2316778956780
+};

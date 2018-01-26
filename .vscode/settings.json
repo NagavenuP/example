@@ -1,0 +1,27 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "files.autoSave": "onFocusChange",
+    "files.trimTrailingWhitespace": false,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/platforms": true,
+        "**/plugins": true,
+        "**/www": true
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/bundle.js": true,
+        "**/bundle.js.map": true,
+        "**/.DS_Store": true
+    },
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "eslint.autoFixOnSave": true,
+    "typescript.tsdk": "/usr/lib/node_modules/typescript/lib",
+    "tslint.autoFixOnSave": true,
+    "tslint.run": "onSave",
+    "tslint.ignoreDefinitionFiles": true
+}

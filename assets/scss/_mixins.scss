@@ -1,0 +1,14 @@
+.flex {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+}
+
+/*style to overide materializes css*/
+ .management .checklist .checkbox__checkmark:after{
+          top: 8px !important;
+ }
+.checkbox--material__checkmark:before{
+    border-radius: 100%;
+    top: 3px;
+}

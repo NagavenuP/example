@@ -1,0 +1,39 @@
+.notifications{
+  .event-navigation {
+    @extend .flex !optional;
+    justify-content: space-around;
+    background-color:#ff0000; // position: fixed;
+    width: 100%;
+    z-index: 2; // top: 53px;
+    .active {
+        border-bottom: 1px solid #ffffff;
+        color: #ffffff !important;
+    }
+    .list_tab {
+        width: 50%;
+        font-family: 'RobotoCondensed-Bold';
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: -1px;
+    }
+    .list_tab.active p {
+        margin-bottom: 12px;
+    }
+}
+.card{
+    width:100%;
+    margin-top: 2px;
+
+    .nameIcon{
+        width:10%;
+    }
+    .name{
+        width:70%;
+    }
+    .icon{
+        width:20%;
+    }
+}
+    
+}
+

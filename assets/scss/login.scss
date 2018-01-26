@@ -1,0 +1,67 @@
+
+
+.login
+{
+    height: 100%;
+
+    .loginbackground{
+   background-image: url('./../images/backimgbackup.png');
+        height: 100%;
+        .parent{
+         display: table;
+    margin: 0px 23px auto;
+    height: 113%;
+    width: 95%;
+           .child{
+            display: table-cell;
+            margin: 0px auto;
+            font-size: 25px;
+            vertical-align: middle;
+            padding-top: 20%;
+           }
+        }
+.input{
+    .inputfield{
+            width: 90%;
+   // padding: 0px 0px 22px 0px;
+    }
+    .logindiv{
+    width: 96%;
+    padding-top: 6%;
+    .forgetPassword{
+        width: 50%;
+         font-size: 20px;
+        float: left
+    }
+    .allowme{
+         width: 45%;
+    float: right;
+    height: 26px;
+    border-radius: 7px;
+    background: #bf5050;
+    color: white;
+    }
+    .left{
+        text-align: left;
+    }
+}
+.validation_error{
+        color: red;
+        font-size: 15px;
+    }
+}
+
+    
+
+      
+
+  
+.textcolor{
+    color: red
+}
+         
+    }
+
+ 
+}
+    
