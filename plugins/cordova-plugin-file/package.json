@@ -1,28 +1,27 @@
 {
-  "_from": "cordova-plugin-file@6.0.1",
+  "_from": "cordova-plugin-file",
   "_id": "cordova-plugin-file@6.0.1",
   "_inBundle": false,
   "_integrity": "sha1-SWBrjBWlaI1HKPkuSnMloGHeB/U=",
   "_location": "/cordova-plugin-file",
   "_phantomChildren": {},
   "_requested": {
-    "type": "version",
+    "type": "tag",
     "registry": true,
-    "raw": "cordova-plugin-file@6.0.1",
+    "raw": "cordova-plugin-file",
     "name": "cordova-plugin-file",
     "escapedName": "cordova-plugin-file",
-    "rawSpec": "6.0.1",
+    "rawSpec": "",
     "saveSpec": null,
-    "fetchSpec": "6.0.1"
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
-    "#USER",
-    "/"
+    "#USER"
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-file/-/cordova-plugin-file-6.0.1.tgz",
   "_shasum": "49606b8c15a5688d4728f92e4a7325a061de07f5",
-  "_spec": "cordova-plugin-file@6.0.1",
-  "_where": "E:\\Projects\\reactjs-abp-ci\\reactjs-abp-cip",
+  "_spec": "cordova-plugin-file",
+  "_where": "C:\\Users\\nagavenu\\Desktop\\Blood\\example",
   "author": {
     "name": "Apache Software Foundation"
   },

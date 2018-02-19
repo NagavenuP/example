@@ -6,13 +6,15 @@ import { BaseComponent } from '../core/base_component';
 import { IAppStore } from '../reducers/index';
 import { utility } from '../utils/index';
 import './../../assets/scss/login.scss'
-import { Input } from "react-onsenui";
+import { Input, Page } from "react-onsenui";
 import { user_actions } from "../actions/user_actions";
+import Header from './../components/generic/header'
 interface ILoginProps {
     Dispatch?: Dispatch<Action>;
     User?: IUserState;
     Access: Array<string>;
     IsLoggedIn?: boolean;
+    pageKey?: string;
 
 }
 interface IUserState {
@@ -87,38 +89,42 @@ class Login extends BaseComponent<ILoginProps, ILoginState>  {
     render(): JSX.Element {
 
         return (
-            <div className='login'>
-                {/*logo*/}
-                <div className='loginbackground'>
-                    {/*login*/}
-                    <div className='parent'>
-                        <div className='child'>
-                            <div className='input'>
-                                <Input {...{ class: 'inputfield' }}
-                                    placeholder=''
-                                    {...{ onBlur: this.emailChangeHandler }}
-                                    type='email'
+            <Page  {...{ pageKey: this.props.pageKey }}
+                renderToolbar={() => <Header pageKey={this.props.pageKey} hasBackButton={true} pageTitle='' />}>
+                <div className='login'>
+                    {/*logo*/}
+                    <div className='loginbackground'>
+                        {/*login*/}
+                        <div className='parent'>
+                            <div className='child'>
+                                <div className='input'>
+                                    <Input {...{ class: 'inputfield' }}
+                                        placeholder=''
+                                        {...{ onBlur: this.emailChangeHandler }}
+                                        type='email'
 
-                                />
-                                <div className='validation_error'>{this.state.errors.emailError}</div>
-                                <Input {...{ class: 'inputfield' }}
-                                    {...{ onBlur: this.passwordChangeHandler }}
-                                    placeholder=''
-                                    type='password'
-                                />
-                                <div className='validation_error'>{this.state.errors.passwordError}</div>
+                                    />
+                                    <div className='validation_error'>{this.state.errors.emailError}</div>
+                                    <Input {...{ class: 'inputfield' }}
+                                        {...{ onBlur: this.passwordChangeHandler }}
+                                        placeholder=''
+                                        type='password'
+                                    />
+                                    <div className='validation_error'>{this.state.errors.passwordError}</div>
 
-                                <div className='logindiv'>
-                                    <div className='forgetPassword'>Forgot Access?</div>
-                                    <button className='allowme' onClick={this.login}>Allow Me!</button>
+                                    <div className='logindiv'>
+                                        <div className='forgetPassword'>Forgot Access?</div>
+                                        <button className='allowme' onClick={this.login}>Allow Me!</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
+                </div >
+            </Page>
 
-
-                </div>
-            </div >
         );
     }
 }

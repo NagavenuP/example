@@ -35,6 +35,7 @@ class Header extends BaseComponent<IHeaderProps, IHeaderState> {
     }
     openSideBar = () => {
         this.props.Dispatch(app_actions.openSideBar());
+        console.log('sadadasd')
     }
     popPage = (e?) => {
         if (custom_navigator.activeRoute === this.props.pageKey) {
@@ -69,7 +70,7 @@ class Header extends BaseComponent<IHeaderProps, IHeaderState> {
                     }
                 </div>
                 <div className='center'>
-                    <span>{this.props.pageTitle || 'ABP'}</span>
+                    <span>{this.props.pageTitle}</span>
                 </div>
                 {/* <div className='right '>
                     {this.props.hasBackButton && this.props.pageTitle && this.props.pageKey === AppConstants.ELEMENTS && this.props.Mode !== 'View' && this.props.SurveyStatus !== AppConstants.SURVEY_STATUS_SUBMITTED

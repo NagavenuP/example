@@ -1,4 +1,10 @@
 
+import 'onsenui/css/onsen-css-components.css';
+import 'onsenui/css/onsenui.css';
+import './../assets/scss/app.scss';
+import './../assets/scss/icon-style.css';
+import AppComponent from './pages/app';
+
 import * as ons from 'onsenui';
 import 'onsenui/css/onsen-css-components.css';
 import 'onsenui/css/onsenui.css';
@@ -7,8 +13,10 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import './../assets/scss/app.scss';
 import './../assets/scss/icon-style.css';
-import AppComponent from './pages/app';
+import { app_config } from './config/app_config';
 import { initReduxStore, store } from './store/index';
+import { utility } from './utils/index';
+import { custom_navigator } from "./utils/navigator";
 
 initReduxStore((err: any, state: any) => {
   if (err) { } else {
@@ -25,7 +33,7 @@ function renderApp(): void {
         return;
 
       }
-
+      custom_navigator.popPage();
     }
       , true);
     window.onerror = function (messageOrEvent, source, lineno, colno, error) {
@@ -41,18 +49,16 @@ function renderApp(): void {
   });
 
 }
-function appLaunchedFromLink(eventData) {
 
-}
 declare const universalLinks;
 document.addEventListener('deviceready', deviceReady, false);
 function deviceReady() {
   //I get called when everything's ready for the plugin to be called!
 
 
+
   // bind deep linking in android
   if (universalLinks) {
-    universalLinks.subscribe(null, appLaunchedFromLink);
   }
 }
 

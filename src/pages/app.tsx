@@ -12,10 +12,8 @@ import { IAppStore } from './../reducers/index';
 import { utility } from './../utils/index';
 import SignUp from './signuporlogin';
 import Dashboard from './dashboard';
-import Login from './login';
-import Register from './register'
 interface IAppComponentProps {
-    IsSideBarOpen?: boolean;
+    IsSidebarOpen?: boolean;
     IsLoggedIn?: boolean;
     IsLoginScreenOpen?: string;
     Dispatch?: any;
@@ -56,7 +54,6 @@ class AppComponent extends BaseComponent<IAppComponentProps, IAppComponentState>
     render(): JSX.Element {
         return (
             <div className='root_container'>
-                {console.log('sdada', this.props.IsLoggedIn)}
                 {!this.props.IsLoggedIn &&
                     <CustomNavigator
                         renderPage={this.renderPage}
@@ -68,28 +65,6 @@ class AppComponent extends BaseComponent<IAppComponentProps, IAppComponentState>
                     />
                 }
                 {
-                    !this.props.IsLoggedIn && this.props.IsLoginScreenOpen === 'login' &&
-                    <CustomNavigator
-                        renderPage={this.renderPage}
-                        initialRoute={{
-                            component: Login,
-                            key: custom_navigator.pageKeys.login,
-                            pageKey: custom_navigator.pageKeys.login
-                        }}
-                    />
-                }
-                {
-                    !this.props.IsLoggedIn && this.props.IsLoginScreenOpen === 'signup' &&
-                    <CustomNavigator
-                        renderPage={this.renderPage}
-                        initialRoute={{
-                            component: Register,
-                            key: custom_navigator.pageKeys.register,
-                            pageKey: custom_navigator.pageKeys.register
-                        }}
-                    />
-                }
-                {
                     <Splitter {...{ class: 'splitterPosition' }} key=''>
                         <SplitterSide {...{
                             class: 'navSideBar', width: '70%' as any
@@ -97,7 +72,7 @@ class AppComponent extends BaseComponent<IAppComponentProps, IAppComponentState>
                             side='left'
                             collapse={true}
                             {...{ swipeable: false } }
-                            isOpen={this.props.IsSideBarOpen}
+                            isOpen={this.props.IsSidebarOpen}
                             onClose={this.hideSideBar}>
 
                             <MenuComponent />

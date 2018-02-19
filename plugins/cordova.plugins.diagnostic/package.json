@@ -1,5 +1,5 @@
 {
-  "_from": "cordova.plugins.diagnostic@^3.8.1",
+  "_from": "cordova.plugins.diagnostic@^3.9.1",
   "_id": "cordova.plugins.diagnostic@3.9.1",
   "_inBundle": false,
   "_integrity": "sha1-FMi94ve6kxaNQzcJK0H7N/O3c9M=",
@@ -8,12 +8,12 @@
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "cordova.plugins.diagnostic@^3.8.1",
+    "raw": "cordova.plugins.diagnostic@^3.9.1",
     "name": "cordova.plugins.diagnostic",
     "escapedName": "cordova.plugins.diagnostic",
-    "rawSpec": "^3.8.1",
+    "rawSpec": "^3.9.1",
     "saveSpec": null,
-    "fetchSpec": "^3.8.1"
+    "fetchSpec": "^3.9.1"
   },
   "_requiredBy": [
     "#USER",
@@ -21,8 +21,8 @@
   ],
   "_resolved": "https://registry.npmjs.org/cordova.plugins.diagnostic/-/cordova.plugins.diagnostic-3.9.1.tgz",
   "_shasum": "14c8bde2f7ba93168d4337092b41fb37f3b773d3",
-  "_spec": "cordova.plugins.diagnostic@^3.8.1",
-  "_where": "E:\\Projects\\reactjs-abp-ci\\reactjs-abp-cip",
+  "_spec": "cordova.plugins.diagnostic@^3.9.1",
+  "_where": "C:\\Users\\nagavenu\\Desktop\\Blood\\example",
   "author": {
     "name": "Dave Alden"
   },

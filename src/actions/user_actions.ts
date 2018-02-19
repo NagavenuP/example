@@ -13,7 +13,7 @@ class UserActions {
     }
 
     // constants here (Action Constants are always PascalCase)
-    loginSuccess = (data: any) => {
+    loginSuccess = (data?: any) => {
         return {
             type: this.Constants.LoginSuccess,
             payload: data

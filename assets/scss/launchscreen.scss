@@ -1,0 +1,32 @@
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+.launchscreen{
+  .botomtoolbar {
+   // justify-content: space-around;
+   background-color:#ffffff; // position: fixed;
+    width: 100%;
+    position:fixed; height:70px; padding:5px; bottom:0px; 
+    display:flex;
+    z-index: 2; // top: 53px;
+    .active {
+        border-bottom: 1px solid #f14242
+        ;
+        color: #f14242 !important;
+    }
+    .list_tab {
+        width: 50%;
+        font-family: 'RobotoCondensed-Bold';
+        text-align: center;
+        color: #f14242;
+        margin-bottom: -1px;
+    }
+    .list_tab.active p {
+        margin-bottom: 12px;
+    }
+}
+    
+}
+

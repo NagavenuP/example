@@ -14,6 +14,10 @@ class Notifications extends React.Component<any, any>{
             activeTab: 'receiver'
         }
     }
+    clearAll = () => {
+        this.receivers = [];
+        this.setState({})
+    }
     changeLabel = (tab) => {
         this.setState({ activeTab: tab.value })
     }
@@ -52,8 +56,8 @@ class Notifications extends React.Component<any, any>{
                             })
                         }
                     </div>
-                    <div className='footer'>
-                        <button>Clear All</button>
+                    <div className='footer' onClick={this.clearAll}>
+                        <div className='button'>Clear All</div>
                     </div>
                 </div>
             </Page>

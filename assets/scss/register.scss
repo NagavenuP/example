@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+ons-input, ons-radio, ons-checkbox, ons-search-input{
+    display: inline-block;
+                position: relative;
+                width: 100%;
+                margin-top: 15px;
+}
+.button--material{
+    margin: 27px 88px;
+}
+.register{
+     height: 100%;
+     .background{
+   background: #fff center center no-repeat;
+    padding: 7px 10px 10px 10px;
+    height: 76%;
+    margin: 54px 10px 10px 10px;
+     }
+    .file{
+        height: 30%;
+        width: 100%;
+        .openfile{
+                  height: 145px;
+                  width: 54%;
+                  border: 0.5px solid #dad3d3;
+                  border-radius: 8px;
+                  margin: 0px 0px 32px 77px;
+        }
+        .icon{
+            width: 50%;
+            color: red;
+            float: right;
+        }
+    }
+    .input{
+            
+    }
+     
+}

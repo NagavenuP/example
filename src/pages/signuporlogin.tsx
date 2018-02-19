@@ -3,18 +3,21 @@ import { Page } from "react-onsenui";
 import { utility } from "../utils/index";
 import { connect } from "react-redux";
 import './../../assets/scss/signup.scss'
-import { user_actions } from "../actions/user_actions";
+import { custom_navigator } from "../utils/navigator";
+import Login from './login';
+import Register from './register'
 class SignUp extends React.Component<any, any>{
     constructor(props: any) {
         super(props)
     }
     login = () => {
-        this.props.Dispatch(user_actions.openLoginScreen('login'))
+        custom_navigator.pushPage(Login, custom_navigator.pageKeys.login)
+        //  this.props.Dispatch(user_actions.openLoginScreen('login'))
     }
 
     signUp = () => {
-        console.log('sdfsdfsdf')
-        this.props.Dispatch(user_actions.openLoginScreen('signup'))
+        custom_navigator.pushPage(Register, custom_navigator.pageKeys.register)
+        //this.props.Dispatch(user_actions.openLoginScreen('signup'))
     }
     render() {
         return (
